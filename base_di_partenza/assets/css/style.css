@@ -197,7 +197,11 @@ footer a {
   color: fuchsia;
 }
 /*-------------------MEDIA-QUERY-----------------*/
-@media screen and (min-width: 575px) and (max-width: 991px) {
+@media screen and (min-width: 576px) {
+  body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   table {
     margin: 0 auto;
     width: 70%;
@@ -210,15 +214,28 @@ footer a {
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1399px) {
-  table {
-    margin: 0 auto;
-    width: 70%;
-    margin-top: 8rem;
-    margin-bottom: 8rem;
-    font-size: 1.3rem;
-  }
-  aside {
+@media screen and (min-width: 992px) {
+  aside div {
     display: inline-block;
+    margin-left: 1%;
+  }
+  iframe {
+    width: 50%;
+    height: 190px;
+  }
+  section {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    border-radius: 20px;
+  }
+}
+@media print {
+  header,
+  section,
+  iframe,
+  aside,
+  footer {
+    display: none;
   }
 }
